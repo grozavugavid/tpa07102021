@@ -30,4 +30,22 @@ for i in range(len(matrix)):
 print("Suma elementelor mai sus de diagonala principala este:",sum(sumaelemmaisusdediagpr))
 
 sumaelemmaijosdediagpr=[]
-for i in range(len(matrix))
+for i in range(len(matrix)):
+for j in range(len(matrix[0])) :
+        if i-j>0 :
+            sumaelemmaijosdediagpr.append(matrix[i][j])
+print("Suma elementelor mai jos de diagonala principala este:",sum(sumaelemmaijosdediagpr))
+
+sumaelemmaisusdediagsec=[]
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])) :
+        if i+j<n-1 :
+            sumaelemmaisusdediagsec.append(matrix[i][j])
+print("Suma elementelor mai sus de diagonala secundara este:",sum(sumaelemmaisusdediagsec))
+
+sumaelemmaijosdediagsec=[]
+for i in range(len(matrix)):
+    for j in range(len(matrix[0])) :
+        if i+j>n-1 :
+            sumaelemmaijosdediagsec.append(matrix[i][j])
+print("Suma elementelor mai jos de diagonala secundara este:",sum(sumaelemmaijosdediagsec))
